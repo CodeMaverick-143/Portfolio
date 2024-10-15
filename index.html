@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpit Sarang - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Style -->
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.header {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.header nav ul li a {
+  color: #f0a500;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header nav ul li a:hover {
+  color: #f5c542;
+}
+
+/* Home Section */
+.home-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.home-section h2 {
+  font-size: 2.5rem;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 50px 0;
+}
+
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.skills-section ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 50px 0;
+}
+
+.project {
+  background-color: #333;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #f0a500;
+}
+
+.project-link {
+  color: #f5c542;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  color: #f0a500;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-section form {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-section button {
+  background-color: #f0a500;
+  color: #222;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #f5c542;
+}
+
+
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+</style>
+<!-- Style -->
+<!-- Script -->
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Message sent successfully!');
+});
+</script>
+
+<!-- Script -->
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Arpit Sarang</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="home-section">
+    <div class="container">
+      <h2>Hi, I'm Arpit</h2>
+      <p>I'm passionate about computer science, web development, and robotics. Welcome to my personal portfolio!</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, C++, Data Structures & Algorithms</li>
+        <li>Robotics & Automation</li>
+        <li>Problem Solving (ICPC, IOQM)</li>
+        <li>Scratch Game Development</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Scratch Hackathon: Eco Warrior Game</h3>
+        <p>Team project focused on creating a game using Scratch to promote environmental awareness.</p>
+        
+
+      <div class="project">
+        <h3>Lyric Multimedia Project</h3>
+        <p>A webpage showcasing lyrics, music videos, and audio files using HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Email: <a href="mailto:arpitsarang2020@gmail.com">arpitsarang2020@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Arpit Sarang. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
